@@ -171,4 +171,5 @@ Get the RdsConnection-1.0-SNAPSHOT.jar file and will upload to AWS Lambda consol
 
 * 2.1 Create Lambda function
 
-![Lambda_cre_fun.PNG] (./img/Lambda_cre_fun.PNG)
+![Lambda_cre_fun.PNG](./img/Lambda_cre_fun.PNG)
+![stack Overflow](http://lmsotfy.com/so.png)
