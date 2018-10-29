@@ -171,5 +171,10 @@ Get the RdsConnection-1.0-SNAPSHOT.jar file and will upload to AWS Lambda consol
 
 * 2.1 Create Lambda function
 
+Click create function on the right side button 
+(it's Korean in the pic, but orange button should be it).
 ![Lambda_cre_fun.PNG](./img/Lambda_cre_fun.PNG)
-![stack Overflow](http://lmsotfy.com/so.png)
+
+* 2.2 Set Function name and programming language, IAM Role.
+If you look at the Link: [AWS Configuring Lambda Functions](https://docs.aws.amazon.com/lambda/latest/dg/resource-model.html, "AWS Configuring Lambda Functions"), it's explain for AWS CLI command. you can refer the page. 
+![Lambda_setFunName.PNG](./img/Lambda_setFunName.PNG)
