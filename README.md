@@ -12,13 +12,13 @@ I set up those software package and AWS services. Pushed README file how to set 
 * [Git] Git repository
 * [Java] Maven project including JDBC(mariaDB) Driver based on Ubuntu 16.04 LTS
 
-## Java maven project
+## 1. Java maven project
 
 ### Packaging Java Maven project without IDE such as Eclipse or any
 
 reference URI : https://docs.aws.amazon.com/lambda/latest/dg/java-create-jar-pkg-maven-no-ide.html
 
-* Check Maven version on Linux ( using Ubuntu command line )
+* 1.1 Check Maven version on Linux ( using Ubuntu command line )
 ```
 root@test:~$sudo mvn -v
 	-ba	sh: mvn: command not found
@@ -30,7 +30,7 @@ root@test:~$sudo apt list maven
 	maven/xenial,xenial 3.3.9-3 all
 ```
 
-* Install Maven
+* 1.2 Install Maven
 ```
 root@test:~$sudo apt-get install maven
 	Reading package lists... Done
@@ -41,7 +41,7 @@ root@test:~$sudo apt-get install maven
   	...
 ```
 
-* Check Maven version after installing
+* 1.3 Check Maven version after installing
 ```
 root@test:~$ mvn -v
 	Apache Maven 3.3.9
@@ -51,7 +51,7 @@ root@test:~$ mvn -v
 	Default locale: en_US, platform encoding: UTF-8
 	OS name: "linux", version: "4.4.0-1066-aws", arch: "amd64", family: "unix"
 ```
-* Create project
+* 1.4 Create project
 You should have the following the directory :
 ```
 project-dir/pom.xml
@@ -114,7 +114,7 @@ If you had followed, Directory structure will be looks like this.
                 └── ./src/main/java/rdsConnection/RdsConnection.java 
  ```
 
-* Packaging Java project.
+* 1.5 Packaging Java project.
 Go to 'rdsConnection' directory and use the command.
 ```
  root@test:~/rdsConnection$ sudo mvn package
@@ -165,3 +165,8 @@ Maven has packaged the project below rdsConnection dir.
 ```
 
 Get the RdsConnection-1.0-SNAPSHOT.jar file and will upload to AWS Lambda console.
+
+## 2. AWS Lambda service
+### Create Lambda function and see log on CloudWatch
+
+* 2.1 Create Lambda function
