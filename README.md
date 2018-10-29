@@ -1,6 +1,7 @@
 # How to create Lambda Service and run test
 
 Introducing run AWS Lambda service on Amazon Web Service.
+This file has uploading up. Thank you for your understanding
 
 ### Refer this list to build a Lambda function
 
@@ -173,8 +174,25 @@ Get the RdsConnection-1.0-SNAPSHOT.jar file and will upload to AWS Lambda consol
 
 Click create function on the right side button 
 (it's Korean in the pic, but orange button should be it).
+
 ![Lambda_cre_fun.PNG](./img/Lambda_cre_fun.PNG)
 
 * 2.2 Set Function name and programming language, IAM Role.
 If you look at the Link: [AWS Configuring Lambda Functions](https://docs.aws.amazon.com/lambda/latest/dg/resource-model.html, "AWS Configuring Lambda Functions"), it's explain for AWS CLI command. you can refer the page. 
+
 ![Lambda_setFunName.PNG](./img/Lambda_setFunName.PNG)
+
+* 2.3 Set VPC, Subnet, Security group on Lambda console.
+If you want to access any AWS service, mind it let Lambda and the other service have to place in same VPC, subnet, security gorup.
+In my case, I had to reach to RDS on private subnet in a VPC.
+
+![Lambda_setNetwork.PNG](./img/Lambda_setNetwork.PNG)
+
+* 2.4 Call an Lambda function across API Gateway 
+Drag API Gateway and add trigger on the list.
+
+![Lambda_MainPage.PNG](./img/Lambda_MainPage.PNG)
+
+![Lambda_MainPage.PNG](./img/Lambda_MainPage.PNG)
+
+
