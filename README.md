@@ -170,4 +170,4 @@ Get the RdsConnection-1.0-SNAPSHOT.jar file and will upload to AWS Lambda consol
 ### Create Lambda function and see log on CloudWatch
 
 * 2.1 Create Lambda function
-![AWS Lambda create function] (./img/Lambda_cre_fun.PNG)
+![Lambda_cre_fun.PNG] (./img/Lambda_cre_fun.PNG)
