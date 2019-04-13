@@ -1,12 +1,1 @@
-# Repository tree
-
-* AWS_Cli/README.md
-* Lambda/bin/
-
-  Lambda/img/
-
-  Lambda/src/
-
-  README.md
-
-* README.md
+This repository created to run an application on AWS
