@@ -1,3 +1,2 @@
-A contributor working on a working tree locally
-
-Commit from feature branch
+A contributor working on Mac local working tree
+#commit branch delete

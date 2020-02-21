@@ -1,3 +1,2 @@
 B contributor working on a Docker container
 
-Commit from feature branch
