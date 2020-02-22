@@ -1,3 +1,4 @@
 B contributor working on a Docker container
-test1
-test2
+
+Commit from feature branch
+test1 from HaeyoonJo
