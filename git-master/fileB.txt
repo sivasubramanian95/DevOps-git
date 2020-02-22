@@ -1,7 +1,6 @@
 A contributor working on Mac local working tree
 #commit branch delete
 
-test1 # israelKorea staging
-test2 # israelKorea staging
-test3 # israelKorea staging
-test4 # israelKorea staging
+test1 # HaeyoonJo staging
+test2 # HaeyoonJo staging
+
