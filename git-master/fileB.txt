@@ -1,2 +1,6 @@
 A contributor working on Mac local working tree
 #commit branch delete
+
+test1 # HaeyoonJo staging
+test2 # HaeyoonJo staging
+
