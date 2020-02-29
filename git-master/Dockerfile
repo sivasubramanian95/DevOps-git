@@ -1,6 +1,11 @@
 From ubuntu:latest
+MAINTAINER HaeyoonJo <test@gmail.com>
 
-RUN apt update && apt list --upgradable && apt install tree git vim -y
+RUN apt update && apt list --upgradable
+RUN apt install tree git vim -y
 RUN mkdir /home/DevOps-git
+
 WORKDIR /home/DevOps-git
+
 RUN git clone https://github.com/HaeyoonJo/DevOps-git.git
+
