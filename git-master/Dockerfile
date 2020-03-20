@@ -7,5 +7,6 @@ RUN mkdir /home/DevOps-git
 
 WORKDIR /home/DevOps-git
 
-RUN git clone https://github.com/HaeyoonJo/DevOps-git.git
+CMD ['/bin/df', '-h']
 
+RUN git clone https://github.com/HaeyoonJo/DevOps-git.git
