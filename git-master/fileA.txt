@@ -1,3 +1,0 @@
-B contributor working on a Docker container
-
-test commit A Contributor, feature branch
