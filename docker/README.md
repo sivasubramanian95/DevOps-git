@@ -1,6 +1,6 @@
 # Run Docker private registry and app server on AWS EC2
 
-- server IP(example ip addr):
+- server IP( example ip addr ):
   docker-registry: 52.59.225.211
   docker: 3.120.159.80
 
@@ -44,7 +44,7 @@ $ docker run -d \
   registry:latest
 ```
 
-- * If you're using registry storage on AWS S3 bucket, you can follow the command below:
+- If you're using registry storage on AWS S3 bucket, you can follow the command below:
 ```
 $ docker run -d \
     -p 5000:5000 \
@@ -62,9 +62,7 @@ $ docker run -d \
 
 ### 2. App server
 
-
-
-- Config app server enabled push and pull docker image to private Docker registry server
+- Config app server to push and pull docker image to private Docker registry server
 ```
 $ sudo vi /etc/docker/daemon.json
 {
@@ -72,7 +70,7 @@ $ sudo vi /etc/docker/daemon.json
 }
 ```
 
-- Run [Dockerfile](Dockerfile), build and check the container is running based on configured Nginx image
+- Run [Dockerfile](Dockerfile), build image and check the container is running based on configured Nginx image
 ```
 $ docker build -t nginx/haeyoon:0.1
 $ docker run -d -p 80:80 \
@@ -103,4 +101,4 @@ ubuntu@ip-172-31-36-229:~$ tree /tmp/registry/docker/registry/v2/blobs/sha256/
 │   └── 111ba0647b87721c5700e04da65c5adde40fe7791e8374fd8813e3639636562d
 │       └── data
 ```
-ENJOY DOCKER
+**ENJOY DOCKER**
