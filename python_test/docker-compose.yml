@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root1234
+      MYSQL_DATABASE: example_db
+      MYSQL_USER: haeyoon
+      MYSQL_PASSWORD: 1234
+    networks:
+      - app-tier
+    cap_add:
+      - SYS_NICE
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    networks:
+      - app-tier
+    command:
+      tail -f /dev/null
+
+networks:
+  app-tier:
+    driver: bridge
