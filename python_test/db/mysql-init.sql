@@ -1,15 +1,15 @@
-drop database if exists example_docker_db;
-create database example_db;
-use example_db;
+drop database if exists sample;
+create database sample;
+use sample;
 
 --
 -- Table structure for table `example_table`
 --
 
-DROP TABLE IF EXISTS `example_table`;
+DROP TABLE IF EXISTS `sample_table`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `example_table` (
+CREATE TABLE `sample_table` (
   `id`        bigint(20)   NOT NULL,
   `INS_DATE`  datetime     NOT NULL,
   `NAME`      varchar(255) NOT NULL,
@@ -22,9 +22,9 @@ CREATE TABLE `example_table` (
 -- Dumping data for table `EXAMPLE_TABLE`
 --
 
-LOCK TABLES `example_table` WRITE;
+LOCK TABLES `sample_table` WRITE;
 /*!40000 ALTER TABLE `example_table` DISABLE KEYS */;
-INSERT INTO `example_table` (id, INS_DATE, NAME, VALUE)
+INSERT INTO `sample_table` (id, INS_DATE, NAME, VALUE)
 VALUES
 ( 1, now(), 'example-1', 'value-1'),
 ( 2, now(), 'example-2', 'value-2'),
