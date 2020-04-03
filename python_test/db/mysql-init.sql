@@ -1,4 +1,4 @@
--- drop database if exists example_docker_db;
+drop database if exists example_docker_db;
 create database example_db;
 use example_db;
 
@@ -37,4 +37,3 @@ VALUES
 ( 9, now(), 'example-9', 'value-9');
 /*!40000 ALTER TABLE `example_table` ENABLE KEYS */;
 UNLOCK TABLES;
-
