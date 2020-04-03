@@ -16,7 +16,6 @@ services:
       - SYS_NICE
     volumes:
       - ./db/mysql-init.sql:/docker-entrypoint-initdb.d/0_init.sql
-      - ./db:/var/lib/mysql
 
   web:
     build:
