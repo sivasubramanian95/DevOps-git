@@ -12,7 +12,7 @@ cnx = mysql.connector.connect(
 cur = cnx.cursor()
 now = datetime.now().date()
 
-add_example = ("INSERT INTO sample_table (id, INS_DATE, NAME, VALUE) VALUE(11, " + now + ", 'example-11', 'value-11');")
+add_example = ("INSERT INTO sample_table (id, INS_DATE, NAME, VALUE) VALUE(11, now(), 'example-11', 'value-11');")
 
 cur.execute(add_example)
 cnx.commit()
