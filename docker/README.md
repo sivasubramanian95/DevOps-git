@@ -13,6 +13,10 @@ run_script.sh
 #!/bin/bash
 sudo apt-get update && sudo apt-get upgrade -y
 sudo wget -qO- https://get.docker.io/ | sh && sudo usermod -aG docker $USER
+# docker-compose installation
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose --version
 
 $ chmod +x run_script.sh
 $ ./run_script.sh
