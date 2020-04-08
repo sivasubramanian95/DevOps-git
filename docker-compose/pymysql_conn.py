@@ -4,8 +4,8 @@ from datetime import date, datetime, timedelta
 
 cnx = mysql.connector.connect(
         host='db',
-        user='user',
-        password='passwd',
+        user='test_user',
+        password='0p9o8i7u6y5t',
         database='sample'
     )
 
@@ -19,4 +19,4 @@ cnx.commit()
 version = cur.fetchone()
 cur.close()
 cnx.close()
-print("Database version: {}".format(version[0]))
+print("Database version: ", version)
