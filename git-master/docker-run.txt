@@ -1,5 +1,0 @@
-docker build --tag ubuntu:haeyoon .
-docker run -it -d --name={name} ubuntu:ht
-docker exec -it {name} /bin/bash
-
-docker build --tag nginx-sv:0.1 .
