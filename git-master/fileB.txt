@@ -1,3 +1,7 @@
-A contributor working on a working tree locally
+A contributor working on Mac local working tree
+#commit branch delete
 
-Commit from feature branch
+test1 # israelKorea staging
+test2 # israelKorea staging
+test3 # israelKorea staging
+test4 # israelKorea staging
